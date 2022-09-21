@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --gold: #B79C09;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    background-image:  linear-gradient(to right ,rgba(20, 20, 20, .5) , rgba(20, 20, 20, .5)) , url(Images/hero-image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /*????*/
+    width: 100vw; /*????*/
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 4.2rem;
+    list-style: none;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    gap: 6rem;
+}
+
+header li {
+    color: var(--gold);
+}
