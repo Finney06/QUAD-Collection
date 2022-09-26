@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@700&display=swap');
 
 :root {
     --gold: #B79C09;
 }
 
-html {
+/* html {
     font-size: 62.5%;
-}
+} */
 
 * {
     margin: 0;
@@ -14,26 +14,86 @@ html {
     box-sizing: border-box;
 }
 
-.hero-section {
-    background-image:  linear-gradient(to right ,rgba(20, 20, 20, .5) , rgba(20, 20, 20, .5)) , url(Images/hero-image1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh; /*????*/
-    width: 100vw; /*????*/
+.bg-light {
+    background-color: transparent !important;
 }
 
-header ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding-top: 4.2rem;
-    list-style: none;
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    gap: 6rem;
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
 }
 
-header li {
+.carousel-caption {
+    bottom: 185px;
+}
+
+.carousel-caption h5 {
+    font-family: 'Italiana', serif;
     color: var(--gold);
+    font-size: 200px;
 }
+
+.carousel-caption p {
+    color: var(--gold);
+    margin: auto;
+    /* font-size: 40px; */
+    text-align: center;
+}
+
+button .icon {
+    color: var(--gold);
+    font-size: 50px;
+}
+
+.carousel-indicators {
+    margin-bottom: 4rem;
+} 
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--gold);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    display: flex;
+    font-size: 20px;
+    color: var(--gold);
+    margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #ddc958;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .navbar-nav {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-caption {
+        bottom: 38%;
+    }
+    .carousel-caption h5 {
+        font-size: 65px;
+    }
+}
+
+
+
