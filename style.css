@@ -80,6 +80,21 @@ button .icon {
     background: transparent;
 }
 
+.overly {
+    filter: brightness(30%);
+ }
+
+ .carousel-caption p  {
+    width: 100vw;
+    margin: -50px;
+    font-family: 'Italiana', serif;
+    font-size: 40px;
+ }
+
+.bottom {
+    bottom: 250px;
+}
+
 @media only screen and (max-width: 767px) {
 
     .navbar-nav {
@@ -92,6 +107,10 @@ button .icon {
     }
     .carousel-caption h5 {
         font-size: 65px;
+    }
+
+    .desktop {
+        display: none;
     }
 }
 
